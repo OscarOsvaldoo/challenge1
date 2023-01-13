@@ -1,0 +1,150 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* NEUTRAL */
+:root{
+    --verydarkblue: hsl(212, 21%, 14%);
+    --darkgrayish:  blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/* PRIMARY */
+
+:root{
+    --darkcyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+}
+
+body{
+    background-color: var(--cream); 
+    height: 97vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;       
+}
+
+p {
+    font-size: 14px;
+}
+
+
+.container{    
+    display: flex;
+    width: 50%;
+    margin: 100px auto;
+   background-color: var(--White);
+   border-radius: 14px;
+    overflow: hidden;
+
+}
+.image-container{
+    background-image: url(images/image-product-desktop.jpg);
+    background-size:  cover;   
+    width: 50%;
+    height: 420px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+
+
+.right-container{
+    margin: 15px auto;
+    /* margin-bottom: 15px; */
+    width: 50%;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+    
+}
+
+.perfume {
+    color: var(--darkgrayish);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.15rem;
+      color: hsl(228, 12%, 48%);
+      padding-top: 16px;
+   
+}
+
+.tittle {
+    font-family: 'Fraunces', serif;
+      line-height: 2rem;
+      font-size: 200%;
+      margin-top: 10px;
+}
+
+.tittle, .description, .perfume, button, .price {
+    margin: 0px 30px 10px 20px;    
+}
+
+
+.description {
+    color: var(--darkgrayish);
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 0.95em;
+    line-height: 22px;
+}
+
+.price {
+    display: flex;    
+    margin-top: 30px;
+
+}
+
+
+
+.price > .price-l {
+    font-family: 'Fraunces', serif;
+    font-size: 200%;
+    color: hsl(158, 36%, 37%);
+    font-weight: 800;
+}
+
+.price-r {
+    font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      text-decoration: line-through;
+      color: hsl(228, 12%, 48%);
+}
+
+.price .carrito {
+    color: black;
+    background-color: black;
+}
+
+button {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      padding-top: 1.1rem;
+      padding-bottom: 1.1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(158, 36%, 37%);
+      border-radius: 0.75rem;
+      border: 0;
+}
+
+button i {
+    margin-right: 0.75rem;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution {
+    display: none;
+}
